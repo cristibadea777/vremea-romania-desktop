@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container-principal {
+  width: 100vw;
+  height: 100vh;
+  background-color: cyan;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  overflow: hidden;
+}
+
+.stanga {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.harta-romaniei {
+  width: 100%;
+  height: 70%;
+}
+
+.judet {
+  cursor: pointer;
+}
+
+.judet:hover {
+  fill: white;
+}
+
+.dreapta {
+  width: 100%;
+  height: 100vh;
+  padding: 3% 5%;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  overflow: hidden;
+}
+
+.meteo-panel {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.agent-panel {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding-top: 12px;
+  padding-right: 6px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.8%;
+}
+
+.text-info,
+.text-info-2 {
+  font-size: clamp(0.85rem, 2vw, 1.25rem);
+  font-weight: bold;
+}
+
+.text-info {
+  color: black;
+}
+
+.text-info-2 {
+  color: white;
+}
+
+.descriere {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.descriere-text {
+  color: white;
+  font-size: clamp(1.3rem, 3.5vw, 1.9rem);
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+
+.imagine-vreme {
+  width: 30%;
+  max-height: 20vh;
+  object-fit: contain;
+}
+
+.agent-window { 
+  width: 100%;
+  min-height: 100%;
+  padding: 18px 20px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid white;
+  border-radius: 18px;
+  color: white;
+}
+
+.agent-title {
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.agent-output {
+  font-size: clamp(0.9rem, 1.8vw, 1.05rem);
+  line-height: 1.45;
+  font-weight: bold;
+  white-space: pre-wrap;
+}
+
+.setari-box {
+  width: 420px;
+  padding: 24px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.setari-box h2 {
+  margin: 0 0 10px 0;
+}
+
+.setari-box label {
+  font-weight: bold;
+}
+
+.setari-box input {
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.setari-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.setari-actions button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.setari-overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: cyan;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mesaj-start {
+  color: white;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buton-setari {
+  position: fixed;
+  left: 12px;
+  bottom: 12px;
+  z-index: 10;
+
+  width: 60px;
+  height: 48px;
+
+  border: 2px solid white;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.25);
+  color: white;
+
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.buton-setari:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
