@@ -36,8 +36,10 @@ După descărcarea proiectului, se instalează dependențele cu:
 
 ```bash
 npm install
+```
 
 ## Rulare
 
 ```bash
 npm run tauri dev
+```
